@@ -1,33 +1,30 @@
-import {BsFillChatLeftTextFill,BsHeartFill} from "react-icons/bs"
+import { BsFillChatLeftTextFill, BsHeartFill } from "react-icons/bs";
 import { FaUserAlt } from "react-icons/fa";
-import {MdShoppingCart} from "react-icons/md"
+import { MdShoppingCart } from "react-icons/md";
 
 export const navIcons = [
   {
     id: "1",
     picUrl: FaUserAlt,
     title: "Profile",
-    dist : "/profile"
+    dist: "/profile",
   },
   {
     id: "2",
     picUrl: BsFillChatLeftTextFill,
     title: "Message",
-    dist : "/message"
-
+    dist: "/message",
   },
   {
     id: "3",
     picUrl: BsHeartFill,
     title: "Orders",
-    dist : "/orders"
-
+    dist: "/orders",
   },
   {
     id: "4",
     picUrl: MdShoppingCart,
     title: "My cart",
-    dist : "/cart"
-
+    dist: "/cart",
   },
 ];
