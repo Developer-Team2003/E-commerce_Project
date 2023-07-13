@@ -3,20 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run open-browser && next dev",
+    "open-browser": "start http://localhost:3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "20.4.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.7",
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
+    "json-server": "^0.17.3",
+    "json-server-auth": "^2.1.0",
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.1",
+    "styled-components": "^6.0.4",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.25",
+    "tailwindcss": "^3.3.2"
   }
 }
