@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import React from 'react'
 type titleProps = {
    title:string,
-   subtitle:string,
+   subtitle?:string,
    classTitle?:string,
    classSubTitle?:string,
    classnameParent?:string,

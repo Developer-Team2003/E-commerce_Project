@@ -1,5 +1,5 @@
-import { ISaleCard } from "../other";
+import { ICard } from "../other";
 
 export interface IPropsExtraService{
-    extraServices : ISaleCard[]
+    extraServices : ICard[]
 }
