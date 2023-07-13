@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import Input from "../Input";
+import Input from "../Global/Input";
 import Button from "../Global/Button/Button";
 
 const Form = () => {

@@ -3,7 +3,7 @@ import SMIcons from "@/components/SocialMediaIcons";
 import SuppliersSection from "@/components/SuppliersSection/SuppliersSection";
 import Footer from "@/components/Footer";
 import Form from "@/components/Form";
-import AboutComponent from "@/components/FooterLinks";
+import AboutComponent from "@/components/Footer/FooterLinks";
 
 export default function Home() {
   return (
