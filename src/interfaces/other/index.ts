@@ -2,11 +2,11 @@ export interface IMenuLinks {
     id: number,
     content: string,
     link: string,
-    classname?: string,
+    className?: string,
   }
 
 export interface ISaleCard {
-    id:number,
+    id: number,
     srcImg : string,
     name : string,
     sale ?: string,

@@ -6,15 +6,15 @@ type titleProps = {
    classTitle?:string,
    classSubTitle?:string,
    classnameParent?:string,
-   childern:any
+   children?:React.ReactNode
 }
-const Title = ({title,subtitle,classTitle,classSubTitle,classnameParent,childern} : titleProps) => {
+const Title = ({title,subtitle,classTitle,classSubTitle,classnameParent,children} : titleProps) => {
   return (
     
     <div className={classNames(classnameParent)}>
         <span className={classNames(classTitle)} >{title}</span>
         {subtitle && <p className={classNames('text-gray-500',classSubTitle)}>{subtitle}</p>}
-        {childern}
+    {children}
     </div>
 
   )

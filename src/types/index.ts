@@ -4,6 +4,7 @@ export type TSaleCard = {
     name : string,
     sale ?: string,
     icon ?: any,
+    className?: string
 } 
 
 export type TBlock = {
