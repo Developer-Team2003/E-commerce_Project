@@ -4,7 +4,6 @@ import ItemCard from "./ItemCard/ItemCard";
 import left from "../../assets/left-aside.png";
 import { BLOCK_GROUP_CONST } from "../../mock/BlockItemList";
 
-
 const BlockGroup = () => {
   return (
     <div className="flex">
