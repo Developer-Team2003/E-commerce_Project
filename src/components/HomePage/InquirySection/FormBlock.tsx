@@ -16,7 +16,6 @@ const FormBlock = () => {
           eiusmod tempor incididunt.
         </p>
       </div>
-
       <div className=" w-[491px] h-[346px] rounded-md mt-[30px] bg-white mr-[31px]">
         <form>
           <p className="font-semibold text-xl leading-7 ml-[20px] mt-[22px] mb-[18px]">
