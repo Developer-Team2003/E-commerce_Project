@@ -18,6 +18,8 @@ const Header = () => {
               <HeaderIcon navPic={navIcon.picUrl} title={navIcon.title} />
             </Link>
           ))}
+             
+
         </div>
       </div>
   );

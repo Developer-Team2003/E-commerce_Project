@@ -1,18 +1,15 @@
-import { StaticImageData } from "next/image";
-
 export interface IMenuLinks {
     id: number,
     content: string,
     link: string,
-    className?: string,
+    classname?: string,
   }
 
-export interface ICard {
-    id?: number,
-    srcImg : StaticImageData,
-    Titlename ?: string,
+export interface ISaleCard {
+    id:number,
+    srcImg : string,
+    name : string,
     sale ?: string,
-    Icon ?:  any | React.ReactNode,
-    classNameParent?: string,
-    classSubTitle?: string,
+    icon ?: any,
 } 
+
