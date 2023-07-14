@@ -8,7 +8,7 @@ const SearchBar = () => {
     <div className='flex'>
       <SearchForm/>
       {/* <DropDownList option={[]}  title="All Category" className="border-blue-600 w-[145px] h-[40px] border-y-2" /> */}
-      <Button type='button' className='w-[100px] h-[40px] text-white rounded-r-lg bg-blue-600' label="Search"  />
+      <Button type='button' classname='w-[100px] h-[40px] text-white rounded-r-lg bg-blue-600' label="Search"  />
     </div>
   )
 }
