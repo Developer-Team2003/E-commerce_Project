@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
 * {
   padding: 0;
@@ -6,9 +11,6 @@
   font-family: "Inter", sans-serif;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,27 +26,6 @@ h1 {
   line-height: normal;
 }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: rgb(224, 222, 222);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1 {
-  font-family: "Inter";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-} */
