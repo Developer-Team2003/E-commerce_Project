@@ -1,20 +1,10 @@
-import { FaFacebook } from "react-icons/fa";
-import SMIcons from "@/components/Footer/SocialMediaIcons";
-import SuppliersSection from "@/components/SuppliersSection/SuppliersSection";
-import Footer from "@/components/Footer";
-import Form from "@/components/Form";
-import AboutComponent from "@/components/Footer/FooterLinks";
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <>
-      <main className="bg-gray-200  flex justify-center align-middle ">
-        <Form />
-      </main>
-      <main className="bg-white flex justify-center align-middle">
-        {/* <Footer /> */}
-        {/* <AboutComponent /> */}
-      </main>
-    </>
-  );
+  return <main>hello develop branch!</main>;
 }

@@ -1,23 +1,22 @@
-import classNames from 'classnames'
-import React from 'react'
+import classNames from "classnames";
+import React, { Children } from "react";
 type titleProps = {
-   title:string,
-   subtitle:string,
+   title?:string,
+   subtitle?:string,
    classTitle?:string,
    classSubTitle?:string,
    classnameParent?:string,
-   childern:any
+   children?:React.ReactNode
 }
-const Title = ({title,subtitle,classTitle,classSubTitle,classnameParent,childern} : titleProps) => {
+const Title = ({title,subtitle,classTitle,classSubTitle,classnameParent,children} : titleProps) => {
   return (
     
-    <div className={classNames(classnameParent)}>
+    <div className={classNames('flex flex-col',classnameParent)}>
         <span className={classNames(classTitle)} >{title}</span>
         {subtitle && <p className={classNames('text-gray-500',classSubTitle)}>{subtitle}</p>}
-        {childern}
+    {children}
     </div>
+  );
+};
 
-  )
-}
-
-export default Title
+export default Title;

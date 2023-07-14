@@ -2,13 +2,12 @@ import React from "react";
 import { navIcons } from "../../constants/headerConst";
 import HeaderIcon from "./HeaderIcon/HeaderIcon";
 import Link from "next/link";
-import Logo from "../Global/Logo/Logo";
 import SearchBar from "./SearchBar/SearchBar";
 
 const Header = () => {
   return (
     <div className="flex place-content-between mt-2">
-      <Logo />
+      {/* <Logo /> */}
       <SearchBar />
       <div className="flex gap-[23px]">
         {navIcons.map((navIcon) => (
