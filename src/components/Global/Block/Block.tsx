@@ -1,8 +1,9 @@
-import React from "react";
-import classNames from "classnames";
-import * as Typography from "@/components/Typography";
+import React from 'react'
+import classNames from 'classnames'
+import * as Typography from '@/components/Typography'
+import { IPropsBlock } from '@/interfaces/props/IPropsBlock'
 
-const Block = ({ classname, content, children }: any) => {
+const Block = ({classname,content,children}:IPropsBlock) => {
   return (
     <div className={classNames(classname, "font-['Inter']")}>
       {content && (
