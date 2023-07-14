@@ -1,5 +1,5 @@
 import React from "react";
-import SMIcons from "../../SocialMediaIcons";
+import SMIcons from "../SocialMediaIcons";
 import Title from "../../Global/Title/Title";
 import { Body } from "../../Typography";
 

@@ -21,7 +21,7 @@ const BlockGroup = () => {
         ))}
       </div>
       <Title classnameParent="absolute flex flex-col gap-4 mt-10 ml-10" title="Home and outdoor"  classTitle="text-lg font-semibold">
-        <Button  label="Source now" classname="w-[123px] h-[40px] rounded-lg bg-white font-semibold" type="button"/>
+        <Button  label="Source now" className="w-[123px] h-[40px] rounded-lg bg-white font-semibold" type="button"/>
       </Title>
 
      

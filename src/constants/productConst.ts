@@ -1,4 +1,3 @@
-import { IPropsProduct } from "@/interfaces/props/IPropsProduct";
 import img from "../assets/03.png";
 export const PRODUCT_CONST: IPropsProduct[] = [
   {

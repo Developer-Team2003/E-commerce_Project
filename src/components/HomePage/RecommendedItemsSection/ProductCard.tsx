@@ -2,7 +2,6 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import img from "../../../assets/05.png";
 import Title from "@/components/Global/Title/Title";
-import classNames from "classnames";
 
 const ProductCard = (props: IPropsProduct) => {
   return (
@@ -11,9 +10,8 @@ const ProductCard = (props: IPropsProduct) => {
       <Title
         title={props.title}
         subtitle={props.subtitle}
-        classTitle="font-medium"
-        classSubTitle= {classNames("text-gray-500  font-normal", props.classSubTitle)}
-        classnameParent={props.classnameParent}
+        classTitle="font-medium ml-3"
+        classSubTitle="text-gray-500  font-normal ml-3"
       />
     </div>
   );
