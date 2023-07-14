@@ -1,5 +1,5 @@
 import { FaFacebook } from "react-icons/fa";
-import SMIcons from "@/components/SocialMediaIcons";
+import SMIcons from "@/components/Footer/SocialMediaIcons";
 import SuppliersSection from "@/components/SuppliersSection/SuppliersSection";
 import Footer from "@/components/Footer";
 import Form from "@/components/Form";

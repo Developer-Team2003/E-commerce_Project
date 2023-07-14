@@ -1,5 +1,5 @@
 import React from "react";
-import SMIcons from "../../SocialMediaIcons";
+import SMIcons from "../SocialMediaIcons";
 import { Body } from "../../Typography";
 
 const FooterLeftSide = () => {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import SMIcons from "../SocialMediaIcons";
+import SMIcons from "./SocialMediaIcons";
 import FooterLeftSide from "./FooterLeftSide";
 import FooterLinks from "./FooterLinks";
 

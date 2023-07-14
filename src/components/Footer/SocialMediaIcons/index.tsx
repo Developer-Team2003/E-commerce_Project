@@ -1,5 +1,5 @@
 import React from "react";
-import { SMIconsConsts } from "../../constants/socialMediaIcons";
+import { SMIconsConsts } from "../../../constants/socialMediaIcons";
 
 const SMIcons = () => {
   return (
