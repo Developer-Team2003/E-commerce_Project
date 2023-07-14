@@ -11,6 +11,7 @@ const DropDownList = (props: IPropsDropDownList) => {
           <option key={option}> {option}</option>
         ))}
       </select>
+      
     </div>
   );
 };
