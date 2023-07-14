@@ -9,9 +9,10 @@ export interface IMenuLinks {
 
 export interface ICard {
     id?: number,
-    srcImg : StaticImageData ,
+    srcImg : StaticImageData,
     Titlename ?: string,
     sale ?: string,
-    Icon ?:  any |React.ReactNode,
-    classNameParent?: string
+    Icon ?:  any | React.ReactNode,
+    classNameParent?: string,
+    classSubTitle?: string,
 } 

@@ -1,8 +1,7 @@
 import { TSaleCard } from "@/types"
 import { TBlock } from "@/types"
 import { IMenuLinks,ICard} from "@/interfaces/other"
-import ExtraImage from '@/assets/ExtraImg1.png'
-import CustomIcon from "@/components/Global/Icon/Icon"
+import ExtraImage from '@/mock/mockProductPicture/laptop.png'
 import  {HiSearch}  from "react-icons/hi";
 
 
@@ -25,13 +24,13 @@ export const MainMenuLinks: IMenuLinks[] = [
   { id: 9, content: 'More category', link: '', className: 'text-gray-600 pl-[10px] py-[10px] w-[250px] rounded-lg' },
 ]
 
-// export const saleCards: ICard[] = [
-//   { id: 1, srcImg: '', name: "Smart watches", sale: '-25%' , className : 'h-[100px]' },
-//   { id: 2, srcImg: '', name: "Laptops", sale: '-15%' },
-//   { id: 3, srcImg: '', name: "GoPro cameras", sale: '-40%' },
-//   { id: 4, srcImg: '', name: "Headphones", sale: '-25%' },
-//   { id: 5, srcImg: '', name: "Canon camreras", sale: '-25%' },
-// ]
+export const saleCards: ICard[] = [
+  { id: 1, srcImg: ExtraImage, Titlename: "Smart watches", sale: '-25%' ,classNameParent:"gap-1",classSubTitle:"w-16 bg-[#FFE3E3] rounded-2xl h-7 flex justify-center items-center !m-auto" },
+  { id: 2, srcImg: ExtraImage, Titlename: "Laptops", sale: '-15%' ,classNameParent:"gap-1",classSubTitle:"w-16 bg-[#FFE3E3] rounded-2xl h-7 flex justify-center items-center !m-auto"},
+  { id: 3, srcImg: ExtraImage, Titlename: "GoPro cameras", sale: '-40%',classNameParent:"gap-1",classSubTitle:"w-16 bg-[#FFE3E3] rounded-2xl h-7 flex justify-center items-center !m-auto" },
+  { id: 4, srcImg: ExtraImage, Titlename: "Headphones", sale: '-25%',classNameParent:"gap-1",classSubTitle:"w-16 bg-[#FFE3E3] rounded-2xl h-7 flex justify-center items-center !m-auto" },
+  { id: 5, srcImg: ExtraImage, Titlename: "Canon camreras", sale: '-25%',classNameParent:"gap-1",classSubTitle:"w-16 bg-[#FFE3E3] rounded-2xl h-7 flex justify-center items-center !m-auto" },
+]
 
 export const extraServices: ICard[] = [
   { id: 1, srcImg: ExtraImage , Titlename: "Source from Industry Hubs", Icon: HiSearch , classNameParent:'w-[280px] h-[200px] bg-ExtraImg flex items-end rounded-md border-[#d9d9d9] border-2 relative   '},

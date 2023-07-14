@@ -3,5 +3,7 @@ interface IPropsProduct {
   picUrl: any;
   title?: string;
   subtitle?: string;
-  className?: string;
+  className?: string,
+  classSubTitle?: string,
+  classnameParent?: string
 }

@@ -19,8 +19,8 @@ export default function Home() {
       <MainMenuInfo />
       <MainMenuLink MainMenuLinks={MainMenuLinks}/>
       <MainContent /> */}
+      {/* <ExtraServices extraServices={extraServices} /> */}
       {/* <SaleSection /> */}
-      <ExtraServices extraServices={extraServices} />
     </main>
   )
 }

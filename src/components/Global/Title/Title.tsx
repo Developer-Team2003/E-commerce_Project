@@ -11,7 +11,7 @@ type titleProps = {
 const Title = ({title,subtitle,classTitle,classSubTitle,classnameParent,children} : titleProps) => {
   return (
     
-    <div className={classNames(classnameParent)}>
+    <div className={classNames('flex flex-col',classnameParent)}>
         <span className={classNames(classTitle)} >{title}</span>
         {subtitle && <p className={classNames('text-gray-500',classSubTitle)}>{subtitle}</p>}
     {children}
