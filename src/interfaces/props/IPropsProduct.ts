@@ -1,4 +1,4 @@
-interface IPropsProduct {
+export interface IPropsProduct {
   id?: number;
   picUrl: any;
   title?: string;

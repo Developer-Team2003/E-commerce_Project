@@ -1,14 +1,15 @@
+import { IPropsDropDownList } from "@/interfaces/props/IPropsDropDownList";
 import React from "react";
 // const DropDownList = (props: { className: string }) => {
 
-const DropDownList = () => {
+const DropDownList = (props: IPropsDropDownList) => {
   return (
     <div>
-      <select title="selection">
-        <option>Help</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+      <select title="selection" className={props.className}>
+        <option hidden>{props.title}</option>
+        {props.options.map((option) => (
+          <option key={option}> {option}</option>
+        ))}
       </select>
     </div>
   );
