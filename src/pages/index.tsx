@@ -1,4 +1,3 @@
-
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import MainMenuLink from '@/components/HomePage/MainSection/MainMenuLink/MainMenuLink'
@@ -10,8 +9,8 @@ import MainContent from '@/components/HomePage/MainSection/MainContent/MainConte
 import SaleSection from '@/components/HomePage/SaleSection/SaleSection'
 import ExtraServices from '@/components/HomePage/ExtraServicesSection/ExtraServicesSection'
 import Icon from '@/components/Global/Icon/Icon'
-
-const inter = Inter({ subsets: ['latin'] })
+import SuppliersSection from '@/components/HomePage/SuppliersSection/SuppliersSection';
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (

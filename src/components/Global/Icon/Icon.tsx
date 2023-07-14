@@ -9,7 +9,6 @@ const IconGlobal = ({className,children}: IPropsIcon) => {
   return (
     <div className={classNames(className)}>
         {children}
-        
     </div>
   )
 }

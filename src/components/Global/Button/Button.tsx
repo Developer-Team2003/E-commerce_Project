@@ -9,4 +9,4 @@ const Button = (props: IPropsButton) => {
   )
 }
 
-export default Button
+export default Button;

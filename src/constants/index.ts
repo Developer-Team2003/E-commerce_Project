@@ -5,10 +5,13 @@ import ExtraImage from '@/assets/ExtraImg1.png'
 import CustomIcon from "@/components/Global/Icon/Icon"
 import  {HiSearch}  from "react-icons/hi";
 
+
+import ExtraImg1 from "@/assets/ExtraImg1.png";
+
 export const block: TBlock = {
   /* classname: 'bg-[#F38332] w-[200px] h-[120px] shadow-md rounded-md p-[16px] text-base text-[20px]', */
-  content: 'Get US $10 off with a new supplier'
-}
+  content: "Get US $10 off with a new supplier",
+};
 
 export const MainMenuLinks: IMenuLinks[] = [
   { id: 1, content: 'Automobiles', link: '', className: "text-gray-600 bg-[#E5F1FF] pl-[10px] py-[10px] w-[250px] rounded-lg" },

@@ -1,7 +1,7 @@
-import classNames from 'classnames'
-import React from 'react'
+import classNames from "classnames";
+import React, { Children } from "react";
 type titleProps = {
-   title:string,
+   title?:string,
    subtitle?:string,
    classTitle?:string,
    classSubTitle?:string,
@@ -16,8 +16,7 @@ const Title = ({title,subtitle,classTitle,classSubTitle,classnameParent,children
         {subtitle && <p className={classNames('text-gray-500',classSubTitle)}>{subtitle}</p>}
     {children}
     </div>
+  );
+};
 
-  )
-}
-
-export default Title
+export default Title;

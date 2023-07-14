@@ -8,6 +8,6 @@ export type TSaleCard = {
 } 
 
 export type TBlock = {
-    classname? : string,
-    content: string
-  }
+  classname?: string;
+  content: string;
+};

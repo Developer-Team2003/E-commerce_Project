@@ -5,12 +5,11 @@ import Image from 'next/image'
 import React from 'react'
 import  {HiSearch}  from "react-icons/hi";
 import ExtraImage from '@/assets/ExtraImg1.png'
-import Title from '@/components/Global/Title/Title';
 import IconGlobal from '@/components/Global/Icon/Icon'
 import classNames from 'classnames';
+import Title from '@/utils/components/Global/Title/Title';
+
 const ExtraService = ({srcImg,Titlename,Icon,id,classNameParent}:ICard) => {
-  
-  console.log(typeof Titlename)
   return (
     <div key={id} className={classNames(classNameParent)}>
         {/* <Image src={srcImg} alt="Description of the image"/> */}

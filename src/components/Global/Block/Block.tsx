@@ -5,13 +5,15 @@ import { IPropsBlock } from '@/interfaces/props/IPropsBlock'
 
 const Block = ({classname,content,children}:IPropsBlock) => {
   return (
-    <div className={classNames(classname,"font-['Inter']")}>
-        {content && <Typography.Body classnameContent="text-[#FFF] w-28 ">
-            {content}
-        </Typography.Body>}
-        {children}
+    <div className={classNames(classname, "font-['Inter']")}>
+      {content && (
+        <Typography.Body classnameContent="text-[#FFF] w-28 ">
+          {content}
+        </Typography.Body>
+      )}
+      {children}
     </div>
-  )
-}
+  );
+};
 
-export default Block
+export default Block;
