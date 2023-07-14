@@ -1,7 +1,9 @@
-export interface IPropsProduct {
+interface IPropsProduct {
   id?: number;
-  picUrl?: any;
+  picUrl: any;
   title?: string;
   subtitle?: string;
-  className?: string;
+  className?: string,
+  classSubTitle?: string,
+  classnameParent?: string
 }
