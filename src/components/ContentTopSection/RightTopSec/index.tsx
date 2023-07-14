@@ -2,6 +2,7 @@ import Button from "@/components/Global/Button/Button";
 import Input from "@/components/Global/Input";
 import React from "react";
 import { FaThLarge } from "react-icons/fa";
+import { VscMenu } from "react-icons/vsc";
 
 const RightTopSec = () => {
   return (
@@ -20,7 +21,7 @@ const RightTopSec = () => {
         </button>
         <div className="border border-gray-300"></div>
         <button type="button" className="p-1 hover:bg-gray-300">
-          <FaThLarge size={25} />
+          <VscMenu size={25} />
         </button>
       </div>
     </form>
