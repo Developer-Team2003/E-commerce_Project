@@ -16,7 +16,8 @@ module.exports = {
         'ExtraImg' : 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZAq08u4YaR0Jsu2CgeptdxC74y-9QEeFYEAb6YHP&s)'
       },
       fontFamily:{
-        'Inter': ['Inter', 'sans-serif']
+        'Inter': ['Inter', 'sans-serif'],
+        'system-ui' : ['system-ui']
       }
     },
   },
