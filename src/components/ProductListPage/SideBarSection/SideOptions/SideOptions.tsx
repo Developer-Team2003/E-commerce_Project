@@ -7,19 +7,16 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
 import { IPropsSideBar } from "@/interfaces/props/IPropsSideBar";
 import { CATEGORY_SIDEBAR_CONST } from "@/constants/sideBarConst";
-function SideOptions(props: IPropsSideBar) {
-  const [expanded, setExpanded] = React.useState<string | false>(false);
+import DropDownSideBar from "@/components/Global/DropDownSideBar/DropDownSideBar";
 
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
-    };
+const SideOptions = (props: IPropsSideBar) => {
+  const [expanded, setExpanded] = React.useState<string | false>(false);
 
   return (
     <div>
       <Accordion
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
+        // expanded={expanded === "panel1"}
+        // onChange={handleChange("panel1")}
         className="w-60	"
       >
         <AccordionSummary
@@ -29,6 +26,7 @@ function SideOptions(props: IPropsSideBar) {
         >
           <Typography className="font-semibold h-10">{props.title}</Typography>
         </AccordionSummary>
+
         <AccordionDetails>
           {props.type
             ? props.options?.map((item) => (
@@ -62,5 +60,5 @@ function SideOptions(props: IPropsSideBar) {
       </Accordion>
     </div>
   );
-}
-export default SideOptions;
+};
+export default DropDownSideBar(SideOptions, "Price range");

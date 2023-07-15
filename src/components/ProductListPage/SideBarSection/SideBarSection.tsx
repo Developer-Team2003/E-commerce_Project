@@ -1,5 +1,6 @@
 import React from "react";
 import SideOptions from "./SideOptions/SideOptions";
+import RangeSlider from "./RangeSlider/RangeSlider";
 
 const SideBarSection = () => {
   return (
