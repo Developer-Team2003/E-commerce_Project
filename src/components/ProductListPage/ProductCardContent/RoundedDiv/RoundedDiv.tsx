@@ -6,7 +6,7 @@ type IPorpsRoundedDiv = {
 
 const RoundedDiv = ({className}:IPorpsRoundedDiv) => {
   return (
-    <div ></div>
+    <div className={classNames(className)}></div>
   )
 }
 

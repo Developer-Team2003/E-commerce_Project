@@ -1,16 +1,17 @@
-import React from 'react'
-import { MdOutlineStarPurple500 } from 'react-icons/md'
+import { IPropsRating } from "@/interfaces/props/IPropsRating";
+import classNames from "classnames";
+import React from "react";
+import { MdOutlineStarPurple500 } from "react-icons/md";
 
-const Rating = () => {
+
+const Rating = ({ className, colors }: IPropsRating) => {
   return (
-    <div className="flex">
-            <MdOutlineStarPurple500 color="#FF9017" />
-            <MdOutlineStarPurple500 color="#FF9017" />
-            <MdOutlineStarPurple500 color="#FF9017" />
-            <MdOutlineStarPurple500 color="#FF9017" />
-            <MdOutlineStarPurple500 color="#D4CDC5" />
-          </div>
-  )
-}
+    <div className={classNames(className, "flex")}>
+      {colors.map((item) => (
+        <MdOutlineStarPurple500 key={item.id} color={item.color} />
+      ))}
+    </div>
+  );
+};
 
-export default Rating
+export default Rating;
