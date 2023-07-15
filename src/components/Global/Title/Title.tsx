@@ -12,7 +12,7 @@ const Title = ({title,subtitle,classTitle,classSubTitle,classnameParent,children
   return (
     
     <div className={classNames('flex flex-col',classnameParent)}>
-        <span className={classNames(classTitle)} >{title}</span>
+         {title && <span className={classNames(classTitle)} >{title}</span>}
         {subtitle && <p className={classNames('text-gray-500',classSubTitle)}>{subtitle}</p>}
     {children}
     </div>
