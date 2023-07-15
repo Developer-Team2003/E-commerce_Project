@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Body, H1, H2 } from "../../../Typography";
+import { Body, H1, H2 } from "../../Typography";
 import { links } from "../../../constants/footerLinksConsts";
 
 const FooterLinksCosts = () => {

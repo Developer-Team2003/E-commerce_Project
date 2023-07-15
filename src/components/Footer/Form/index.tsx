@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import Input from "../Input";
-import Button from "@/Global/Button/Button";
+import Button from "../../Global/Button/Button";
 
 const Form = () => {
   return (
@@ -13,7 +13,7 @@ const Form = () => {
           placeholder="Email"
         />
         <Button
-          className="text-white py-0 px-[16px] h-[30px] rounded-md bg-blue-500 font-semibold shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+          classname="text-white py-0 px-[16px] h-[30px] rounded-md bg-blue-500 font-semibold shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
           type="submit"
           label="Subscribe"
         />

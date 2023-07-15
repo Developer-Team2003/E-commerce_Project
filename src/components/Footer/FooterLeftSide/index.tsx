@@ -1,6 +1,6 @@
 import React from "react";
 import SMIcons from "../SocialMediaIcons";
-import { Body } from "../../../Typography";
+import { Body } from "../../Typography";
 
 const FooterLeftSide = () => {
   return (
