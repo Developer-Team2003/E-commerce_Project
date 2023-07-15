@@ -1,17 +1,19 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
+import img from "../../../assets/05.png";
 import Title from "@/components/Global/Title/Title";
-import { IPropsProduct } from "@/interfaces/props/IPropsProduct";
+import classNames from "classnames";
 
 const ProductCard = (props: IPropsProduct) => {
   return (
-    <div className={`${props.className} rounded-md `}>
+    <div className={props.className}>
       <Image src={props.picUrl} alt="product" />
       <Title
         title={props.title}
         subtitle={props.subtitle}
-        classTitle="font-medium ml-3"
-        classSubTitle="text-gray-500  font-normal ml-3"
+        classTitle="font-medium"
+        classSubTitle= {classNames("text-gray-500  font-normal", props.classSubTitle)}
+        classnameParent={props.classnameParent}
       />
     </div>
   );
