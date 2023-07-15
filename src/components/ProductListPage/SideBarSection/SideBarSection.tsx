@@ -4,7 +4,7 @@ import RangeSlider from './RangeSlider/RangeSlider'
 const SideBarSection = () => {
   return (
     <div>
-      <RangeSlider />
+      <RangeSlider title = 'mohanned el banna' />
     </div>
   )
 }
