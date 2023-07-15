@@ -5,12 +5,9 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
-interface IPropsSideBar {
-  title: string;
-  options: string[];
-  type?: string;
-}
-export default function SideOptions(props: IPropsSideBar) {
+import { IPropsSideBar } from "@/interfaces/props/IPropsSideBar";
+import { CATEGORY_SIDEBAR_CONST } from "@/constants/sideBarConst";
+function SideOptions(props: IPropsSideBar) {
   const [expanded, setExpanded] = React.useState<string | false>(false);
 
   const handleChange =
@@ -23,35 +20,47 @@ export default function SideOptions(props: IPropsSideBar) {
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
-        className="w-[240px]"
+        className="w-60	"
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className="font-semibold">{props.title}</Typography>
+          <Typography className="font-semibold h-10">{props.title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           {props.type
-            ? props.options.map((item) => (
-                <Typography key={item} className="">
-                  <input type={props.type} />
-                  {item}
+            ? props.options?.map((item) => (
+                <Typography key={item} className="h-9 ">
+                  <input
+                    type={props.type}
+                    className="mr-2 w-4 h-4 "
+                    id={item}
+                    name="option"
+                  />
+                  <label htmlFor={item}>{item}</label>
                 </Typography>
               ))
-            : props.options.map((item) => (
-                <Typography key={item} className="">
-                  {item}
+            : CATEGORY_SIDEBAR_CONST.map((item) => (
+                <Typography key={item.option} className="h-9 text-gray-600">
+                  <Link href={item.Url} className="hover:text-blue-600">
+                    {item.option}
+                  </Link>
                 </Typography>
               ))}
-          <Typography className="">
-            <Link href="/" className="text-blue-500">
-              See all
-            </Link>
-          </Typography>
+          {props.SeeAllUrl ? (
+            <Typography className="h-9">
+              <Link href={props.SeeAllUrl} className="text-blue-600">
+                See all
+              </Link>
+            </Typography>
+          ) : (
+            ""
+          )}
         </AccordionDetails>
       </Accordion>
     </div>
   );
 }
+export default SideOptions;
