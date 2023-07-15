@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap");
+
+
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
 
 * {
@@ -25,3 +26,6 @@ h1 {
   line-height: normal;
 }
 
+body{
+  background-color: rgb(224, 222, 222);
+}

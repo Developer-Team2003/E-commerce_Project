@@ -5,7 +5,7 @@ import IPropsItemCard from "../../../../interfaces/props/IPropsItemCard";
 
 const ItemCard = (props: IPropsItemCard) => {
   return (
-    <div className="cursor-pointer flex justify-center items-center border p-4  h-[127px] gap-8">
+    <div className="bg-white cursor-pointer flex justify-center items-center border p-4  h-[127px] gap-8">
       <Title
         title={props.title}
         subtitle={props.subtitle}
