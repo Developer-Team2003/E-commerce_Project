@@ -1,10 +1,10 @@
-'use client'
-import React, { useState } from 'react';
-import Title from '@/components/Global/Title/Title';
+"use client";
+import React, { useState } from "react";
+import Title from "@/components/Global/Title/Title";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
-import classNames from 'classnames';
+import classNames from "classnames";
 
-const DropDownSideBar = (WrappedComponent: React.ReactNode | any,/* title:string */) => {  
+const DropDownSideBar = (WrappedComponent: React.ReactNode | any) => {  
     return (props: any) => {
         const [isChecked, setIsChecked] = useState<boolean>(false);  
         return (
@@ -27,10 +27,8 @@ const DropDownSideBar = (WrappedComponent: React.ReactNode | any,/* title:string
                 <WrappedComponent {...props} />
             </div>
         </div>
-        )
-    }
-  }
+    );
+  };
+};
 
-
-  
-export default DropDownSideBar
+export default DropDownSideBar;

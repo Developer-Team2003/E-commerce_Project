@@ -1,66 +1,94 @@
-'use client'
-import Button from '@/components/Global/Button/Button';
-import { Slider } from '@mui/material'
-import Box from '@mui/material/Box';
-import classNames from 'classnames';
-import React, { useEffect } from 'react'
-import { useState } from 'react'
-import DropDownSideBar from '../../../Global/DropDownSideBar/DropDownSideBar';
-import Title from '@/components/Global/Title/Title';
+"use client";
+import Button from "@/components/Global/Button/Button";
+import { Slider } from "@mui/material";
+import Box from "@mui/material/Box";
+import classNames from "classnames";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import DropDownSideBar from "../../../Global/DropDownSideBar/DropDownSideBar";
+import Title from "@/components/Global/Title/Title";
 
 function valuetext(value: number) {
-    return `${value}°C`;
+  return `${value}°C`;
 }
-type eType = React.FormEvent<HTMLFormElement>
+type eType = React.FormEvent<HTMLFormElement>;
 
 const RangeSlider = () => {
-    const [value, setValue] = useState<number[]>([20, 50]);
-    const [minInput, setMinInput] = useState<number | any>(20)
-    const [maxInput, setMaxInput] = useState<number | any>(50)
-    const [placeholder , setIsPlaceholder] = useState<string>('0')
-    const handleChange = (event: Event | eType, newValue: number | number[]) => {
-        setValue(newValue as number[]);
-        setMinInput(newValue[0])
-        setMaxInput(newValue[1])
-    };
-    const handleSubmit = (e: eType) => {
-        e.preventDefault()
-        handleChange(e,[minInput,maxInput])
-    }
-    const handleChangeInput = (e:React.ChangeEvent<HTMLInputElement>) =>{
-       e.target.id == 'min' ? (setMinInput(Number(e.target.value)), setValue([Number(e.target.value),maxInput]) )
-        :( setMaxInput(Number(e.target.value)),setValue([minInput, Number(e.target.value)]))
-    }
-    useEffect(() => {
-        setIsPlaceholder('0')
-    }, [placeholder])
-    return (
-        <div className={classNames('flex flex-col gap-y-4')}>
-            <Slider
-                className=''
-                value={value}
-                onChange={handleChange}
-                valueLabelDisplay="auto"
-                getAriaValueText={valuetext}
+  const [value, setValue] = useState<number[]>([20, 50]);
+  const [minInput, setMinInput] = useState<number | any>(20);
+  const [maxInput, setMaxInput] = useState<number | any>(50);
+  const [placeholder, setIsPlaceholder] = useState<string>("0");
+  const handleChange = (event: Event | eType, newValue: number | number[]) => {
+    setValue(newValue as number[]);
+    setMinInput(newValue[0]);
+    setMaxInput(newValue[1]);
+  };
+  const handleSubmit = (e: eType) => {
+    e.preventDefault();
+    handleChange(e, [minInput, maxInput]);
+  };
+  const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.target.id == "min"
+      ? (setMinInput(Number(e.target.value)),
+        setValue([Number(e.target.value), maxInput]))
+      : (setMaxInput(Number(e.target.value)),
+        setValue([minInput, Number(e.target.value)]));
+  };
+  useEffect(() => {
+    setIsPlaceholder("0");
+  }, [placeholder]);
+  return (
+    <div className={classNames("flex flex-col gap-y-4")}>
+      <Slider
+        className=""
+        value={value}
+        onChange={handleChange}
+        valueLabelDisplay="auto"
+        getAriaValueText={valuetext}
+      />
+      <form
+        onSubmit={(e) => handleSubmit(e)}
+        className="flex flex-col justify-center items-center gap-y-2"
+      >
+        <Title classnameParent={classNames("!flex-row gap-2")}>
+          <Title classnameParent="">
+            <label htmlFor="min">Min</label>
+            <input
+              id="min"
+              type="number"
+              value={minInput}
+              placeholder={placeholder}
+              min={0}
+              onChange={(e) => handleChangeInput(e)}
+              className={classNames(
+                "w-28 h-10 pl-2 rounded-md border-gray-300 border-2"
+              )}
             />
-            <form onSubmit={(e) => handleSubmit(e)} className='flex flex-col justify-center items-center gap-y-2'>
-                <Title classnameParent={classNames('!flex-row gap-2')}>
-                    <Title classnameParent=''>
-                        <label htmlFor="min">Min</label>
-                        <input id='min' type='number' value={minInput} placeholder={placeholder} min={0} onChange={(e) => handleChangeInput(e) } className={classNames('w-28 h-10 pl-2 rounded-md border-gray-300 border-2')} />
-                    </Title>
-                    <Title>
-                        <label htmlFor="max">Max</label>
-                        <input id='max' type='number' value={maxInput} placeholder={placeholder} min={0} onChange={(e) => handleChangeInput(e) } className={classNames('w-28 h-10 pl-2 rounded-md border-gray-300 border-2')} />
-                    </Title>
-                </Title>
-               
-              
-                <Button type='submit' label='Apply' classname='bg-white text-blue-600 rounded-md w-20 h-10 border-gray-300 border-2' />
-            </form>
-            
-        </div>
-    )
-}
+          </Title>
+          <Title>
+            <label htmlFor="max">Max</label>
+            <input
+              id="max"
+              type="number"
+              value={maxInput}
+              placeholder={placeholder}
+              min={0}
+              onChange={(e) => handleChangeInput(e)}
+              className={classNames(
+                "w-28 h-10 pl-2 rounded-md border-gray-300 border-2"
+              )}
+            />
+          </Title>
+        </Title>
 
-export default DropDownSideBar(RangeSlider,'Price range')
+        <Button
+          type="submit"
+          label="Apply"
+          classname="bg-white text-blue-600 rounded-md w-20 h-10 border-gray-300 border-2"
+        />
+      </form>
+    </div>
+  );
+};
+
+export default DropDownSideBar(RangeSlider);
