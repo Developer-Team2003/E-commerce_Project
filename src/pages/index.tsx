@@ -1,13 +1,11 @@
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ["latin"] });
-
+import Footer from "@/components/Footer";
+import Form from "@/components/Footer/Form";
 
 export default function Home() {
-
-  return <main className='m-4 flex flex-col gap-3'>
- 
-  </main>;
-
-
-
+  return (
+    <main>
+      {/* <Form /> */}
+      {/* <Footer /> */}
+    </main>
+  );
 }
