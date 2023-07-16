@@ -5,8 +5,8 @@ import RangeSlider from "./RangeSlider/RangeSlider";
 const SideBarSection = () => {
   return (
     <div>
-      {/* <RangeSlider title = 'mohanned el banna' /> */}
-      <SideOptions title="Category" SeeAllUrl="/" />
+      <RangeSlider title = 'mohanned el banna' />
+      {/* <SideOptions title="Category" SeeAllUrl="/" />
       <SideOptions
         title="Brands"
         options={["Samsung", "Apple", "Huawei ", "Pocco", "Lenovo"]}
@@ -35,7 +35,7 @@ const SideBarSection = () => {
         title="Ratings"
         options={["Samsung", "Apple", "Huawei ", "Pocco", "Lenovo"]}
         type="checkbox"
-      />
+      /> */}
     </div>
   )
 }
