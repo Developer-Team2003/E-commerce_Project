@@ -6,11 +6,11 @@ import { MdOutlineStarPurple500 } from "react-icons/md";
 
 const Rating = ({ className, colors }: IPropsRating) => {
   return (
-    <div className={classNames(className, "flex")}>
+    <span className={classNames("flex" ,className)}>
       {colors.map((item) => (
         <MdOutlineStarPurple500 key={item.id} color={item.color} />
       ))}
-    </div>
+    </span>
   );
 };
 

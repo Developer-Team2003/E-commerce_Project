@@ -16,3 +16,7 @@ export interface ICard {
     classNameParent?: string,
     classSubTitle?: string,
 } 
+
+export interface IRatings{
+  id : number,
+}

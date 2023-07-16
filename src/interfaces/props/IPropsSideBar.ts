@@ -1,3 +1,5 @@
+import { IRatings } from "../other";
+
 export interface IPropsSideBar {
   title?: string;
   options?: string[];
